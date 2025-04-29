@@ -86,3 +86,11 @@ Evaluation was further supported by confusion matrices and classification report
 - **Feature Sparsity:**  
   Sparse TF-IDF matrices can cause underfitting in basic linear models. Potential future work includes dimensionality reduction (e.g., SVD) or more complex feature interactions.
 
+---
+
+## Graphs from Data Exploration
+
+![Correlation Heatmap (Numeric Features)](Graphs/CorrelationHeatmap.png)
+
+The heatmap displays the Pearson correlation coefficients between numeric variables such as VotedHelpful and review_length. Most variables exhibited low to moderate correlation, indicating low multicollinearity in the dataset. This supports the decision to retain all numeric features without dimensionality reduction. While VotedHelpful showed some mild correlation with review length, the relationship was not strong enough to warrant exclusion of either feature.
+
