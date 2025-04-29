@@ -92,5 +92,12 @@ Evaluation was further supported by confusion matrices and classification report
 
 ![Correlation Heatmap (Numeric Features)](Graphs/CorrelationHeatmap.png)
 
-The heatmap displays the Pearson correlation coefficients between numeric variables such as VotedHelpful and review_length. Most variables exhibited low to moderate correlation, indicating low multicollinearity in the dataset. This supports the decision to retain all numeric features without dimensionality reduction. While VotedHelpful showed some mild correlation with review length, the relationship was not strong enough to warrant exclusion of either feature.
+-**Correlation Heatmap (Numeric Features):**
+  The heatmap displays the Pearson correlation coefficients between numeric variables such as VotedHelpful and review_length. Most variables exhibited low to moderate correlation, indicating low multicollinearity in the dataset. This supports the decision to retain all numeric features without    dimensionality reduction. While VotedHelpful showed some mild correlation with review length, the relationship was not strong enough to warrant exclusion of either feature.
+
+
+![Histogram of Review Lengths](Graphs/ReviewLenDistribution.png)
+
+-**Histogram of Review Lengths:**
+  This histogram visualizes the distribution of word counts in reviews (based on combined reviewText and summary). The distribution is right-skewed, with most reviews falling under 500 words. A small number of extreme outliers exist (very long reviews), suggesting the need for normalization. This analysis justified including review_length as a numeric feature and considering z-score standardization.
 
