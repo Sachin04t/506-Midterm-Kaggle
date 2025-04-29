@@ -90,14 +90,42 @@ Evaluation was further supported by confusion matrices and classification report
 
 ## Graphs from Data Exploration
 
-![Correlation Heatmap (Numeric Features)](Graphs/CorrelationHeatmap.png)
+![📊Correlation Heatmap (Numeric Features)](Graphs/CorrelationHeatmap.png)
 
 -**Correlation Heatmap (Numeric Features):**
   The heatmap displays the Pearson correlation coefficients between numeric variables such as VotedHelpful and review_length. Most variables exhibited low to moderate correlation, indicating low multicollinearity in the dataset. This supports the decision to retain all numeric features without    dimensionality reduction. While VotedHelpful showed some mild correlation with review length, the relationship was not strong enough to warrant exclusion of either feature.
 
 
-![Histogram of Review Lengths](Graphs/ReviewLenDistribution.png)
+![📊Histogram of Review Lengths](Graphs/ReviewLenDistribution.png)
 
 -**Histogram of Review Lengths:**
   This histogram visualizes the distribution of word counts in reviews (based on combined reviewText and summary). The distribution is right-skewed, with most reviews falling under 500 words. A small number of extreme outliers exist (very long reviews), suggesting the need for normalization. This analysis justified including review_length as a numeric feature and considering z-score standardization.
+
+
+![📊Top 20 Genres Bar Chart](Graphs/GenreFreqBar.png)
+
+-**Top 20 Genres Bar Chart:**
+  This bar chart shows the 20 most frequent genres in the dataset. Genres like Pop, Rock, and Hip-Hop appeared most frequently. Since genres is a multi-label categorical field, this analysis guided the creation of binary indicator features for the top genres. These engineered features were included in the model to capture important categorical signals.
+
+
+![📊Boxplot of Score vs. VotedHelpful](Graphs/ScoreVsVotesBoxplot.png)
+
+-**Boxplot of Score vs. VotedHelpful:**
+  The boxplot compares the distribution of VotedHelpful across different review Score levels. While reviews with higher scores occasionally had higher median helpful votes, the overall variance was high, and no strong trend emerged. This analysis suggested that helpfulness votes might contain weak predictive value but were not entirely useless, and could be retained as a supplemental feature for experimentation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
