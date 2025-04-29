@@ -16,10 +16,6 @@ Predicting music album review scores based on textual and metadata features. The
 - [5. Model Evaluation / Performance](#5-model-evaluation--performance)
 - [6. Struggles / Issues / Open Questions](#6-struggles--issues--open-questions)
 - [Graphs from Data Exploration](#graphs-from-data-exploration)
-  - [Correlation Heatmap (Numeric Features)](#correlation-heatmap-numeric-features)
-  - [Histogram of Review Lengths](#histogram-of-review-lengths)
-  - [Top 20 Genres Bar Chart](#top-20-genres-bar-chart)
-  - [Boxplot of Score vs. VotedHelpful](#boxplot-of-score-vs-votedhelpful)
 
 ---
 
